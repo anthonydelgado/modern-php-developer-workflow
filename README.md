@@ -1,2 +1,2 @@
-# modern-php-developer-workflow
+# Modern PHP Development Workflow
 Essential Tools For A Modern PHP Development Workflow
