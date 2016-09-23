@@ -100,10 +100,6 @@ databases:
     - wordpress-project-name
     - laravel-project-name
 ```    
-## Initial Local Project Setup
-
-After you have setup your dev environment and all of your tools it is time to setup you project of the first time. Most modern project won't keep shared libraries inside of thier repos, instead the will be brought together into your porject using a "package manager". One of the most popular package managers is called NPM or Node Package Manager. NPM can help you download and manage all sorts of javascript libraries, everything from client side frameworks such as jQuery and React, to server side frameworks like Express and Socket.io, to local development tools like webpack and gulp.
-
 ## Setting up your SSH key
 
 Before you can run vagrant you first have to create an SSH key. To do so run:
@@ -128,6 +124,10 @@ You will also need to set up configuration for your git account. To do so run:
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
+
+## Initial Local Project Setup
+
+After you have setup your dev environment and all of your tools it is time to setup you project of the first time. Most modern project won't keep shared libraries inside of thier repos, instead the will be brought together into your porject using a "package manager". One of the most popular package managers is called NPM or Node Package Manager. NPM can help you download and manage all sorts of javascript libraries, everything from client side frameworks such as jQuery and React, to server side frameworks like Express and Socket.io, to local development tools like webpack and gulp.
 
 ```
 npm install && npm build
