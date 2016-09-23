@@ -160,11 +160,18 @@ After you have setup your dev environment and all of your tools it is time to se
 ```
 npm install && npm build
 ```
-
+## Install WordPress from the Command line! 
+Using the WP CLI we installed earlier makes setting up a new development enviroment super simple and easy! Make sure you are in the root directory of your project and run: 
 ```
 wp core download
 ```
-https://wp-cli.org/commands/core/install/
+This will download all the WordPress core files into your directory. 
+
+To learn more about what WP CLI can do visit: https://wp-cli.org/commands/ 
+
+## Connecting WordPress to your database 
+
+
 
 ## Bug Fixes 
 
