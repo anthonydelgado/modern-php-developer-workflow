@@ -98,6 +98,51 @@ sites:
       to: /home/vagrant/Code/another-wordpress-project-example
 ```
 Notice how the Lavel project ends with the folder of /public and the wordpress projects end directly in the root directory of the repo? That is because Laravel, unlike WordPress, keeps most of its logic files outside of the public folder. For most WordPress projects you won't need the /public folder. 
+### Editing your Host file
+
+Before your sites new .dev sites will be accessable you will need to ect your HOSTS file. On UNIX based machines this is located at /ect/Hosts. You will have to point each .dev site listed above to your local IP address which should be listed at the top of your .yaml file. 
+
+Open up a terminal and run: 
+
+```
+sudo 'nano' /etc/hosts
+```
+
+Scroll to the bottom of the file and add one .dev site per line using the following syntax: 
+
+```
+192.168.10.10    wordpress.dev
+```
+
+When your done Exit the nano editor and save the file by press Control + X to exit: 
+
+```
+CTRL + X
+```
+Then type Y to save and hit enter to over write the file. You will have to do this periotically if you are adding new project dev sites to your machine. 
+
+When you are done your host file should look something like this: 
+```
+  GNU nano 2.0.6              File: /etc/hosts                                  
+
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+
+192.168.10.10   homestead.app
+192.168.10.10    wordpress.dev
+192.168.10.10    anotherawesomeproject.dev
+192.168.10.10    websignia.dev 
+
+```
+
+
 ### Adding a Database
 At the database section of your Homestead.yaml file, you will find a list of databases. By default, only one called homestead will be listed. You will want to add a database for each project that you work on. Any new line added will enable automatic database creation of the same name.
 ```
