@@ -104,6 +104,20 @@ databases:
 
 After you have setup your dev environment and all of your tools it is time to setup you project of the first time. Most modern project won't keep shared libraries inside of thier repos, instead the will be brought together into your porject using a "package manager". One of the most popular package managers is called NPM or Node Package Manager. NPM can help you download and manage all sorts of javascript libraries, everything from client side frameworks such as jQuery and React, to server side frameworks like Express and Socket.io, to local development tools like webpack and gulp.
 
+## Setting up your SSH key
+
+Before you can run vagrant you first have to create an SSH key. To do so run:
+
+ssh-keygen -t rsa -C "your@email.com"
+
+This will prompt you to enter a paraphrase to creating your ssh key. Make it something you will remember.
+
+then run:
+
+pbcopy < ~/.ssh/id_rsa.pub
+
+This will copy your ssh key to your clipboard. Next you will go to your git account. Click on the arrow on the top right next to your profile picture and navigate to settings. On the left select SSH AND GPG keys. You will add a new ssh key here by clicking New SSH key and pasting your key into the text box.
+
 
 
 ```
