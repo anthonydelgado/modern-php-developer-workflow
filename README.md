@@ -114,3 +114,16 @@ npm install && npm build
 wp core download
 ```
 https://wp-cli.org/commands/core/install/
+
+## Bug Fixes 
+
+I had the same issue, my problem was that i run a sudo command that probably affected some permissions, so to fix Homebrew i first run the following command to fix the permissions:
+```
+sudo chown -R "$USER":admin /usr/local
+```
+After that I did a cleanup:
+```
+brew cleanup
+```
+And I was successfully able to update Homebrew and install packages.
+Hope this helps!
