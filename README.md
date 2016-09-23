@@ -10,6 +10,12 @@ These are things you install once per computer (not once per project) and they h
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+### Install an IDE 
+If you can afford it, PHP Storm is a great choice. https://www.jetbrains.com/phpstorm/
+Sublime Text is also another great option. I accutally use both! 
+```
+brew cask install sublime-text
+```
 ### Install Node + NPM 
 ```
 brew install node
