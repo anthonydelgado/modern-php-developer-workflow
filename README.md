@@ -131,6 +131,28 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
+## Turning on your Virtual Machine 
+
+Now that we have configured our project in our .yaml file, its time to turn our VM on for the first time. 
+
+To do so, enter into your Homestead directory: 
+
+```
+cd ~/Homestead 
+```
+
+and run:
+
+```
+vagrant up
+```
+
+This will read all the setting you set up in your .yaml file and turn on a virtual web server on your local machine. If you add new project sites and/or databases to your .yaml file in the future you will have to restart and provision your VM by running this command inside you Homestead directory: 
+
+```
+vagrant reload --provision
+```
+
 ## Initial Local Project Setup
 
 After you have setup your dev environment and all of your tools it is time to setup you project of the first time. Most modern project won't keep shared libraries inside of thier repos, instead the will be brought together into your porject using a "package manager". One of the most popular package managers is called NPM or Node Package Manager. NPM can help you download and manage all sorts of javascript libraries, everything from client side frameworks such as jQuery and React, to server side frameworks like Express and Socket.io, to local development tools like webpack and gulp.
