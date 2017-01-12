@@ -2,8 +2,6 @@
 Essential Tools For A Modern PHP Development Workflow
 
 
-
-
 # Prerequisites 
 These are things you install once per computer (not once per project) and they help you setup and automate your local development enviroment.  
 ### Install Homebrew (http://brew.sh/)
@@ -215,10 +213,36 @@ This will download all the WordPress core files into your directory.
 To learn more about what WP CLI can do visit: https://wp-cli.org/commands/ 
 
 ## Connecting WordPress to your database 
+Visit the URL in a browser and go through the WordPress Installer and enter the following database credits: 
 
 
+```
+DATABASE NAME: wordpress-project-name
+DATABASE USER: homestead
+DATABASE PASSWORD: secret
+DATABASE HOST: localhost
 
-## Bug Fixes 
+```
+
+Alternatively you can edit the wp-config.php located inside the root folder of your project. 
+```
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'wordpress-project-name');
+
+/** MySQL database username */
+define('DB_USER', 'homestead');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'secret');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+
+```
+
+
+## Random Bug Fixes 
 
 I had the same issue, my problem was that i run a sudo command that probably affected some permissions, so to fix Homebrew i first run the following command to fix the permissions:
 ```
