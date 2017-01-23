@@ -43,6 +43,8 @@ You may install Homestead by simply cloning the repository. Consider cloning the
 cd ~
 
 git clone https://github.com/laravel/homestead.git Homestead
+
+cd Homestead
 ```
 Once you have cloned the Homestead repository, run the bash init.sh command from the Homestead directory to create the Homestead.yaml configuration file. The Homestead.yaml file will be placed in the ~/.homestead hidden directory:
 ```
